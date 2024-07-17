@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running the app
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
+- Ruby 3.3.0
+- Redis 7.2.0
 
-* System dependencies
+### Setup
 
-* Configuration
+1. `bundle install`
 
-* Database creation
+### Running
 
-* Database initialization
+1. `bin/dev`
 
-* How to run the test suite
+## Testing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `bundle exec rspec spec`
