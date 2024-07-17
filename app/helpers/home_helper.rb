@@ -20,7 +20,7 @@ module HomeHelper
     if time < 60
       "Arriving now"
     else
-      "#{(time / 60.0).to_i} minutes"
+      pluralize((time / 60.0).to_i, "minute")
     end
   end
 
