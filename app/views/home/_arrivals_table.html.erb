@@ -1,0 +1,24 @@
+<table class="w-full">
+  <thead>
+    <tr>
+      <th class='text-left'>Line</th>
+      <th class='text-left'>Station</th>
+      <th class='text-center'>Platform</th>
+      <th class='leading-6 text-center'>Expected Arrival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @arrivals.sort_by { |arrival| arrival["expectedArrival"] }.map do |arrival| %>
+      <tr>
+        <td class='leading-6'><%= line arrival["lineId"] %></td>
+        <td class='leading-6'><%= format_station arrival["destinationName"] || arrival["towards"] %></td>
+        <td class='text-center'>
+          <p class="leading-6 p-1 bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+            <%= get_platform arrival["platformName"] %>
+          </p>
+        </td>
+        <td class='leading-6 text-center'><%= format_arrival arrival["timeToStation"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

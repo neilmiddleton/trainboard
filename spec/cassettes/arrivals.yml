@@ -1,0 +1,216 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/StopPoint/940GZZLUGPS/Arrivals?mode=tube
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jul 2024 17:30:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, must-revalidate, max-age=30, s-maxage=60
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Api-Entity-Payload:
+      - Prediction
+      X-Backend:
+      - api
+      X-Cache:
+      - MISS
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Frame-Options:
+      - deny
+      X-Proxy-Connection:
+      - unset
+      X-Ttl:
+      - '60.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - '1816819584'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - StopPoint_ArrivalsByPathId
+      X-Api:
+      - StopPoint
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - _cfuvid=Iy6_KKsUwy20JUIVS44oIC9jR61ca9NUn3lirqQWfPs-1721237455165-0.0.1.1-604800000;
+        path=/; domain=.tfl.gov.uk; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8a4bf66bde4794af-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"$type":"Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities","id":"-1468424605","operationType":1,"vehicleId":"204","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"circle","lineName":"Circle","platformName":"Eastbound
+        - Platform 2","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUERC","destinationName":"Edgware
+        Road (Circle Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":672,"currentLocation":"Approaching
+        Westbourne Park","towards":"Edgware Road (Circle)","expectedArrival":"2024-07-17T17:41:31Z","timeToLive":"2024-07-17T17:41:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"219163096","operationType":1,"vehicleId":"205","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"circle","lineName":"Circle","platformName":"Eastbound
+        - Platform 2","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUERC","destinationName":"Edgware
+        Road (Circle Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1152,"currentLocation":"At
+        Hammersmith Platform 1","towards":"Edgware Road (Circle)","expectedArrival":"2024-07-17T17:49:31Z","timeToLive":"2024-07-17T17:49:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1068617582","operationType":1,"vehicleId":"217","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"circle","lineName":"Circle","platformName":"Eastbound
+        - Platform 2","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUERC","destinationName":"Edgware
+        Road (Circle Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1512,"currentLocation":"At
+        Victoria Platform 1","towards":"Edgware Road (Circle)","expectedArrival":"2024-07-17T17:55:31Z","timeToLive":"2024-07-17T17:55:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1267898609","operationType":1,"vehicleId":"210","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Westbound - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUHSC","destinationName":"Hammersmith
+        (H&C Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":192,"currentLocation":"At
+        Kings Cross St. Pancras Platform 1","towards":"Hammersmith","expectedArrival":"2024-07-17T17:33:31Z","timeToLive":"2024-07-17T17:33:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1522990054","operationType":1,"vehicleId":"211","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Westbound - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUHSC","destinationName":"Hammersmith
+        (H&C Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":792,"currentLocation":"At
+        Liverpool Street Platform 2","towards":"Hammersmith","expectedArrival":"2024-07-17T17:43:31Z","timeToLive":"2024-07-17T17:43:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1676180256","operationType":1,"vehicleId":"213","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Westbound - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUHSC","destinationName":"Hammersmith
+        (H&C Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1452,"currentLocation":"At
+        Embankment Platform 2","towards":"Hammersmith","expectedArrival":"2024-07-17T17:54:31Z","timeToLive":"2024-07-17T17:54:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1523317734","operationType":1,"vehicleId":"261","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Westbound - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUHSC","destinationName":"Hammersmith
+        (H&C Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":912,"currentLocation":"Between
+        Aldgate East and Liverpool Street","towards":"Hammersmith","expectedArrival":"2024-07-17T17:45:31Z","timeToLive":"2024-07-17T17:45:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"6000519","operationType":1,"vehicleId":"272","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Eastbound - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUBKG","destinationName":"Barking
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":432,"currentLocation":"At
+        Paddington (Suburban) Platform 16","towards":"Barking","expectedArrival":"2024-07-17T17:37:31Z","timeToLive":"2024-07-17T17:37:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1675787040","operationType":1,"vehicleId":"273","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Eastbound - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUBKG","destinationName":"Barking
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":912,"currentLocation":"Approaching
+        Wood Lane Platform 1","towards":"Barking","expectedArrival":"2024-07-17T17:45:31Z","timeToLive":"2024-07-17T17:45:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1123359155","operationType":1,"vehicleId":"274","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Eastbound - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUBKG","destinationName":"Barking
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1152,"currentLocation":"At
+        Hammersmith Platform 2","towards":"Barking","expectedArrival":"2024-07-17T17:49:31Z","timeToLive":"2024-07-17T17:49:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-721401668","operationType":1,"vehicleId":"277","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"hammersmith-city","lineName":"Hammersmith
+        & City","platformName":"Westbound - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUHSC","destinationName":"Hammersmith
+        (H&C Line) Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":312,"currentLocation":"Left
+        Farringdon","towards":"Hammersmith","expectedArrival":"2024-07-17T17:35:31Z","timeToLive":"2024-07-17T17:35:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:41.885Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-897490633","operationType":1,"vehicleId":"401","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Westbound
+        - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWAF","destinationName":"Watford
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":103,"currentLocation":"At
+        Euston Square Platform 1","towards":"Watford","expectedArrival":"2024-07-17T17:32:02Z","timeToLive":"2024-07-17T17:32:02Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1878649514","operationType":1,"vehicleId":"402","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Westbound
+        - Platform 1","bearing":"","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":553,"currentLocation":"Left
+        Aldgate","towards":"Check Front of Train","expectedArrival":"2024-07-17T17:39:32Z","timeToLive":"2024-07-17T17:39:32Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-762674332","operationType":1,"vehicleId":"404","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Westbound
+        - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUUXB","destinationName":"Uxbridge
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":553,"currentLocation":"At
+        Aldgate Platform 3","towards":"Uxbridge","expectedArrival":"2024-07-17T17:39:32Z","timeToLive":"2024-07-17T17:39:32Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-897359561","operationType":1,"vehicleId":"421","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Westbound
+        - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUUXB","destinationName":"Uxbridge
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":433,"currentLocation":"Approaching
+        Farringdon Platform 2","towards":"Uxbridge","expectedArrival":"2024-07-17T17:37:32Z","timeToLive":"2024-07-17T17:37:32Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"609549776","operationType":1,"vehicleId":"440","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Westbound
+        - Platform 1","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWAF","destinationName":"Watford
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":493,"currentLocation":"At
+        Moorgate Platform 2","towards":"Watford","expectedArrival":"2024-07-17T17:38:32Z","timeToLive":"2024-07-17T17:38:32Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"207494657","operationType":1,"vehicleId":"443","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1452,"currentLocation":"Between
+        Northwick Park and  Preston Road","towards":"Aldgate","expectedArrival":"2024-07-17T17:54:31Z","timeToLive":"2024-07-17T17:54:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-759790748","operationType":1,"vehicleId":"444","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":492,"currentLocation":"Between
+        Willesden Green and Finchley Road","towards":"Aldgate","expectedArrival":"2024-07-17T17:38:31Z","timeToLive":"2024-07-17T17:38:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"2012165339","operationType":1,"vehicleId":"445","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1092,"currentLocation":"Left
+        Wembley Park","towards":"Aldgate","expectedArrival":"2024-07-17T17:48:31Z","timeToLive":"2024-07-17T17:48:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"340244542","operationType":1,"vehicleId":"446","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1392,"currentLocation":"Between
+        Northwick Park and  Preston Road","towards":"Aldgate","expectedArrival":"2024-07-17T17:53:31Z","timeToLive":"2024-07-17T17:53:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1162334827","operationType":1,"vehicleId":"447","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":72,"currentLocation":"Between
+        Baker Street and Great Portland Street","towards":"Aldgate","expectedArrival":"2024-07-17T17:31:31Z","timeToLive":"2024-07-17T17:31:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"207101441","operationType":1,"vehicleId":"463","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":1752,"currentLocation":"At
+        Harrow-on-the-Hill Platform 6","towards":"Aldgate","expectedArrival":"2024-07-17T17:59:31Z","timeToLive":"2024-07-17T17:59:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-760183964","operationType":1,"vehicleId":"464","naptanId":"940GZZLUGPS","stationName":"Great
+        Portland Street Underground Station","lineId":"metropolitan","lineName":"Metropolitan","platformName":"Eastbound
+        - Platform 2","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUALD","destinationName":"Aldgate
+        Underground Station","timestamp":"2024-07-17T17:30:19.0924137Z","timeToStation":372,"currentLocation":"Between
+        Finchley Road and Baker Street","towards":"Aldgate","expectedArrival":"2024-07-17T17:36:31Z","timeToLive":"2024-07-17T17:36:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-07-17T17:30:40.633Z","sent":"2024-07-17T17:30:19Z","received":"0001-01-01T00:00:00"}}]'
+  recorded_at: Wed, 17 Jul 2024 17:30:55 GMT
+recorded_with: VCR 6.2.0
